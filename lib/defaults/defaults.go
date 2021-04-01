@@ -282,7 +282,7 @@ const (
 	SatelliteMetricsPort = 7580
 
 	// SatelliteRPCAgentPort is port used by satellite agent to communicate to the serf cluster
-	SatelliteSerfRPCPort = 7373
+	SatelliteSerfRPCPort = 7374
 
 	// SerfAgentPort is port that serf agent on a node binds on
 	SerfAgentPort = 7496

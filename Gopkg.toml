@@ -29,6 +29,9 @@ ignored = [
   "github.com/gravitational/gravity/build/*",
   "github.com/gravitational/gravity/e/build/*",
   "github.com/gravitational/gravity/lib/system/selinux/generate",
+  "github.com/datomize/gravitational-gravity/build/*",
+  "github.com/datomize/gravitational-gravity/e/build/*",
+  "github.com/datomize/gravitational-gravity/lib/system/selinux/generate",
   "vbom.ml/util/sortorder"
 ]
 
@@ -83,7 +86,8 @@ ignored = [
 
 [[constraint]]
   name = "github.com/gravitational/satellite"
-  version = "=7.0.24"
+  source = "github.com/datomize/gravitational-satellite"
+  version = "=7.0.24-dm"
 
 [[constraint]]
   name = "github.com/gravitational/coordinate"

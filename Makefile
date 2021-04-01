@@ -35,7 +35,7 @@ FIO_TAG := fio-$(FIO_VER)
 FIO_PKG_TAG := $(FIO_VER).0
 
 # Current versions of the dependencies
-CURRENT_TAG ?= $(shell ./version.sh)
+CURRENT_TAG ?= $(shell ./version.sh)-dm
 GRAVITY_TAG := $(CURRENT_TAG)
 # Abbreviated gravity version to use as a build ID
 GRAVITY_VERSION := $(CURRENT_TAG)
@@ -46,7 +46,7 @@ RELEASE_OUT ?=
 TELEPORT_TAG = 3.2.16
 # TELEPORT_REPOTAG adapts TELEPORT_TAG to the teleport tagging scheme
 TELEPORT_REPOTAG := v$(TELEPORT_TAG)
-PLANET_TAG := 7.0.56-$(K8S_VER_SUFFIX)
+PLANET_TAG := 7.0.56-$(K8S_VER_SUFFIX)-dm
 PLANET_BRANCH := $(PLANET_TAG)
 K8S_APP_TAG := $(GRAVITY_TAG)
 TELEKUBE_APP_TAG := $(GRAVITY_TAG)
@@ -63,7 +63,7 @@ SELINUX_VERSION ?= 6.0.1
 # URI of Wormhole container for default install
 WORMHOLE_IMG ?= quay.io/gravitational/wormhole:0.3.3
 # set this to true if you want to use locally built planet packages
-DEV_PLANET ?=
+DEV_PLANET ?= true
 OS := $(shell uname | tr '[:upper:]' '[:lower:]')
 ARCH := $(shell uname -m)
 
