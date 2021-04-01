@@ -35,7 +35,7 @@ FIO_TAG := fio-$(FIO_VER)
 FIO_PKG_TAG := $(FIO_VER).0
 
 # Current versions of the dependencies
-CURRENT_TAG ?= $(shell ./version.sh)-dm
+CURRENT_TAG ?= 7.0.30-dm
 GRAVITY_TAG := $(CURRENT_TAG)
 # Abbreviated gravity version to use as a build ID
 GRAVITY_VERSION := $(CURRENT_TAG)
