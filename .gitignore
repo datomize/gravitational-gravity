@@ -19,3 +19,4 @@ gravity.log
 terraform.tfstate*
 # Ansible retry files
 *.retry
+/gravity-install/
